@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Clinic</fullName>
+    <active>true</active>
+    <label>Clinic</label>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Clinic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Government Office</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Parlor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ration Shop</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

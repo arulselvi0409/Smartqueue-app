@@ -1,0 +1,41 @@
+<template>
+
+<div class="queue-card">
+
+<div class="title">
+SMARTQUEUE LIVE DISPLAY
+</div>
+
+<div class="section">
+
+<div class="section-label">
+Now Serving
+</div>
+
+<div class="now-token">
+{nowServing}
+</div>
+
+</div>
+
+<div class="section">
+
+<div class="section-label">
+Next Tokens
+</div>
+
+<div class="next-list">
+
+<template for:each={nextTokens} for:item="token">
+<div key={token.Id} class="next-token">
+{token.Token_Number__c}
+</div>
+</template>
+
+</div>
+
+</div>
+
+</div>
+
+</template>

@@ -1,0 +1,23 @@
+<template>
+
+<lightning-card title="Now Serving">
+
+    <div style="text-align:center; padding:40px;">
+
+        <template if:true={token}>
+            <h1 style="font-size:32px; font-weight:bold;">
+                {token.Token_Number__c}
+            </h1>
+        </template>
+
+        <template if:false={token}>
+            <h2>No token serving</h2>
+        </template>
+
+    </div>
+<div class="nowServingText">
+    {nowServing}
+</div>
+</lightning-card>
+
+</template>

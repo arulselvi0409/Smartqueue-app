@@ -1,0 +1,83 @@
+<template>
+    <lightning-card title="Nearest Service Centers">
+
+        <lightning-combobox
+            name="serviceType"
+            label="Select Service Type"
+            value={selectedType}
+            options={typeOptions}
+            onchange={handleTypeChange}>
+        </lightning-combobox>
+
+        <lightning-map
+            map-markers={mapMarkers}
+            zoom-level="13"
+            markers-title="Nearby Service Centers"
+            class="slds-m-bottom_large"
+            style="height:400px;">
+        </lightning-map>
+
+        <template if:true={centers}>
+            <template for:each={centers} for:item="center">
+
+                <div key={center.Id} class="slds-box slds-m-around_small slds-p-around_medium">
+
+                    <div class="slds-grid slds-wrap">
+
+                        <!-- LEFT SIDE -->
+                        <div class="slds-col slds-size_2-of-3">
+
+                            <div class="slds-text-heading_small">
+                                <strong>{center.Name}</strong>
+                            </div>
+
+                            <p>
+                                📍 {center.area} • {center.distanceFormatted} km away
+                            </p>
+
+                            <p>
+                                👥 Waiting: {center.waitingCount} people
+                            </p>
+
+                            <p>
+                                🏢 Capacity: {center.capacity}
+                            </p>
+
+                            <p>
+                                ⏱ Est Wait: {center.estimatedWait} minutes
+                            </p>
+
+                            <p>
+                                Status: {center.capacityStatus}
+                            </p>
+
+                        </div>
+
+                        <!-- RIGHT SIDE -->
+                        <div class="slds-col slds-size_1-of-3 slds-align_absolute-center">
+
+                            <lightning-button
+    label="Take Token"
+    variant="brand"
+    onclick={handleTakeToken}
+    data-id={center.Id}
+    disabled={center.isFull}>
+</lightning-button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </template>
+        </template>
+
+        <template if:true={error}>
+            <p class="slds-text-color_error">
+                {error}
+            </p>
+        </template>
+
+    </lightning-card>
+</template>

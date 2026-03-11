@@ -1,0 +1,42 @@
+.queue-card{
+    background:#2b3652;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+    color:white;
+}
+
+.title{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:20px;
+    letter-spacing:1px;
+}
+
+.section{
+    margin-top:15px;
+}
+
+.section-label{
+    font-size:14px;
+    font-weight:500;
+    color:#cfd6e4;
+    margin-bottom:6px;
+}
+
+.now-token{
+    font-size:36px;
+    font-weight:600;
+    color:#6EE7B7;
+    margin-bottom:10px;
+}
+
+.next-list{
+    margin-top:6px;
+}
+
+.next-token{
+    font-size:18px;
+    font-weight:500;
+    margin:3px 0;
+}
