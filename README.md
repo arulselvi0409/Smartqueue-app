@@ -1,18 +1,32 @@
-# Salesforce DX Project: Next Steps
+# SmartQueue – Digital Queue Management System
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+SmartQueue is a Salesforce-based application designed to manage service queues digitally and reduce physical waiting lines.
 
-## How Do You Plan to Deploy Your Changes?
+## Features
+• Digital token generation  
+• Real-time "Now Serving" queue display  
+• Service center locator with map integration  
+• Estimated waiting time calculation  
+• Token cancellation and queue updates  
+• Reports and dashboards for analytics  
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## Technologies Used
+- Salesforce Platform
+- Apex
+- Lightning Web Components (LWC)
+- SOQL
+- Custom Objects
+- Lightning App Builder
+- Reports & Dashboards
 
-## Configure Your Salesforce DX Project
+## Use Cases
+- Hospitals
+- Government Offices
+- Ration Shops
+- Service Centers
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## Project Architecture
+Users → LWC UI → Apex Controllers → Salesforce Objects → Dashboards & Reports
 
-## Read All About It
-
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## Author
+Arul Selvi
